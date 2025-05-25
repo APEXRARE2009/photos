@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>tasks</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="times"></div>
+        <div class="content">
+            <form class="form" action="./uploud.php" method="post" enctype="multipart/form-data">
+                <div class="input__block">
+                    <input class="input" type="file" id="input__file" name="photo" accept="image/*" required>
+                    <label for="input__file" class="input__file">select file</label>
+                </div>
+                <textarea name="comment" class="textarea" required></textarea>
+                <button class="submit" type="submit">next</button>
+            </form>
+            <ul class="photo-list"></ul>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
